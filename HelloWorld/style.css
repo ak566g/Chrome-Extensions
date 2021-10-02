@@ -1,3 +1,9 @@
+body{
+    background-color: wheat;
+}
+
+
 h2{
     color: orange;
+    font-family: sans-serif;
 }
