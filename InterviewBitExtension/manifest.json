@@ -1,0 +1,25 @@
+{
+  "name": "InterviewBit",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Leetcode and GeeksforGeeks links in InterviewBit",
+  "homepage_url": "https://www.interviewbit.com/courses/programming/",
+  "icons": {
+    "16": "icons/ib.png",
+    "48": "icons/ib.png",
+    "128": "icons/ib.png"
+  },
+  "default_locale": "en",
+  "permissions": ["https://www.interviewbit.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.interviewbit.com/*"],
+      "css": ["src/inject/inject.css"]
+    },
+    {
+      "matches": ["https://www.interviewbit.com/*"],
+      "js": ["js/jquery/jquery.min.js", "src/inject/inject.js"]
+    }
+  ],
+  "web_accessible_resources": ["data/*", "icons/*"]
+}
