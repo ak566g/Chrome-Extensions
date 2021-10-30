@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "HN Star Rank",
+    "description": "Place star rating near topics on Hacker Rank News website, based on score and comments counter.",
+    "author": "Stanislav Proshkin",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://news.ycombinator.com/",
+                "https://news.ycombinator.com/news"
+            ],
+            "css": [],
+            "js": [
+                "script.js"
+            ]
+        }
+    ]
+}
